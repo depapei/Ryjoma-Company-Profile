@@ -23,6 +23,30 @@ fetch("project-kuliah/moris/index.html")
     document.getElementById("project-moris-placeholder").innerHTML = data;
 });
 
+fetch("contact/rangga/index.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("contact-rangga-placeholder").innerHTML = data;
+});
+
+fetch("contact/moris/index.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("contact-moris-placeholder").innerHTML = data;
+});
+
+fetch("contact/joseph/index.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("contact-joseph-placeholder").innerHTML = data;
+});
+
+fetch("contact/yanda/index.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("contact-yanda-placeholder").innerHTML = data;
+});
+
 function highlightActiveLink() {
     let currentLocation = window.location.pathname.split("/").pop();
     let navLinks = document.querySelectorAll("#navbar-placeholder .nav-link");
