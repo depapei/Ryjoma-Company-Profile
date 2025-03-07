@@ -1,0 +1,22 @@
+.row, .card, .accordion, .login-container, .signup-container
+{animation: slide-in 1s cubic-bezier(0.25, 1, 0.25, 1);} @keyframes slide-in {from {transform: translateY(100%);}to {ransform: translateY(0);}}
+
+.carousel
+{animation: slide-in-carousel 1s cubic-bezier(0.5, 1, 0.25, 1);} 
+
+@keyframes slide-in-carousel {from 
+    {
+        transform: translateY(15%);
+        opacity: 0;
+    }to 
+    {
+        ransform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
